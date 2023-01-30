@@ -57,10 +57,6 @@
     
     
     .auth-nav .link {
-        padding-top: 24px;
-        padding-bottom: 28px;
-        /*display: block;*/
-    
         font-family: inherit;
         font-size: 16px;
         line-height: 1.5;
@@ -97,6 +93,10 @@
     }
 
     .hero {
+        padding-top: 111px;
+        padding-bottom: 108px;
+        height: 436px;
+
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
         url(../image/people-office-tab.jpg);
@@ -119,6 +119,10 @@
 
     .button {
         margin-top: 40px;
+    }
+
+    .section-name {
+        text-align: left;
     }
 
 
@@ -194,8 +198,4 @@
         column-gap: 24px;
         row-gap: 72px;
     }
-}
-
-@media screen and (max-width: 767px) {
-    
 }

@@ -11,7 +11,16 @@
         gap: 40px;
     }
 
+    .auth-nav .link {
+        padding-top: 24px;
+        padding-bottom: 28px;
+    }
+
     .hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        height: 600px;
+
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
         url(../image/people-office.jpg);

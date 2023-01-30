@@ -168,6 +168,7 @@ img {
     justify-content: space-between;
 
     height: 100%;
+    width: 100%;
     max-width: 480px;
     padding: 40px;
 
@@ -263,10 +264,7 @@ img {
     background-color: var(--title-text-color);
     padding-top: 112px;
     padding-bottom: 112px;
-    /*padding-top: 192px;
-    padding-bottom: 192px;*/
     max-width: 1440px;
-    /*height: 600px;*/
     height: 432px;
     margin-left: auto;
     margin-right: auto;
@@ -695,7 +693,6 @@ column-gap: 24px;
     display: flex;
     justify-content: center;
     gap: 16px;
-    margin-bottom: 72px;
 }
 
 .footer-links-item {
