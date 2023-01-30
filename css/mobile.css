@@ -1,0 +1,36 @@
+@media screen and (min-width: 480px) {
+    .container {
+        width: 428px;
+    }
+
+
+    .hero {
+        height: 432px;
+    }
+
+    .hero-title {
+        width: 318px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .header-nav {
+        justify-content: space-between;
+    }
+
+    .about-list {
+    flex-direction: column;
+    gap: 72px;
+    }
+
+    .first-footer {
+        margin: 0 auto;
+        margin-bottom: 72px;
+        max-width: 268px;
+    }
+
+    .footer-input {
+        margin-bottom: 16px;
+    }
+}

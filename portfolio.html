@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
 </head>
 <body class="page">
     <header class="header">
@@ -17,7 +20,7 @@
             <a href="./index.html" class="logo">web<span class="logo-span">studio</span> </a>
             <nav class="head-nav">
                 <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="link"> Studio </a></li>
+                    <li class="item"><a href="./index.html" class="link "> Studio </a></li>
                     <li class="item"><a href="./portfolio.html" class="link header-portfolio"> Portfolio </a></li>
                     <li class="item"><a href="./index.html" class="link"> Contacts </a></li>
                 </ul>
@@ -27,6 +30,63 @@
                     <li class="item"><a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
                 </ul>
             </nav>
+            <button class="menu-open" type="button" data-menu-open>
+                <svg class="menu-open-icon" width="32" height="22">
+                    <use href="./image/icons/symbol-defs-one.svg#icon-hamburger"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu is-hidden" data-menu>
+            <div class="container">
+                <div>
+                    <button class="menu-close" data-menu-close>
+                        <svg class="icon-menu-close" width="8" height="8">
+                            <use href="./image/icons/symbol-defs-one.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                        <ul class="mobile-menu-store-list list">
+                            <li class="item"><a href="./index.html" class="mob-store-link link"> Studio </a></li>
+                            <li class="item"><a href="./portfolio.html" class="mob-store-link link"> Portfolio </a></li>
+                            <li class="item"><a href="./index.html" class="mob-store-link active-link link"> Contacts </a></li>
+                        </ul>
+                </div>
+                <div>
+                    <ul class="mobile-menu-nav-list list">
+                        <li><a href="mailto:info@devstudio.com" class="menu-link-mail">info@devstudio.com</a></li>
+                        <li><a href="tel:+110001111111" class="menu-link-tel">+11 (000) 111-11-11</a></li>
+                    </ul>
+                    <ul class="mobile-menu-link-list list">
+                        <li class="mobile-menu-item">
+                            <a href="" class="mobile-menu-links">
+                                <svg class="mobile-menu-icon" width="24" height="24">
+                                    <use href="./image/icons/symbol-defs-one.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a href="" class="mobile-menu-links">
+                                <svg class="mobile-menu-icon" width="24" height="24">
+                                    <use href="./image/icons/symbol-defs-one.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a href="" class="mobile-menu-links">
+                                <svg class="mobile-menu-icon" width="24" height="24">
+                                    <use href="./image/icons/symbol-defs-one.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a href="" class="mobile-menu-links">
+                                <svg class="mobile-menu-icon" width="24" height="24">
+                                    <use href="./image/icons/symbol-defs-one.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header> 
 
@@ -232,6 +292,7 @@
         </div>
     </footer>
 
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
 

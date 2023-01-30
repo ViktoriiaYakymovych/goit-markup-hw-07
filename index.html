@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
 </head>
 <body class="page">
 
@@ -28,37 +31,94 @@
                     <li class="item"><a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
                 </ul>
             </nav>
+            <button class="menu-open" type="button" data-menu-open>
+                <svg class="menu-open-icon" width="32" height="22">
+                    <use href="./image/icons/symbol-defs-one.svg#icon-hamburger"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu is-hidden" data-menu>
+            <div class="container">
+                <div>
+                    <button class="menu-close" data-menu-close>
+                        <svg class="icon-menu-close" width="8" height="8">
+                            <use href="./image/icons/symbol-defs-one.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                        <ul class="mobile-menu-store-list list">
+                            <li class="item"><a href="./index.html" class="mob-store-link link"> Studio </a></li>
+                            <li class="item"><a href="./portfolio.html" class="mob-store-link link"> Portfolio </a></li>
+                            <li class="item"><a href="./index.html" class="mob-store-link active-link link"> Contacts </a></li>
+                        </ul>
+                </div>
+                <div>
+                    <ul class="mobile-menu-nav-list list">
+                        <li><a href="mailto:info@devstudio.com" class="menu-link-mail">info@devstudio.com</a></li>
+                        <li><a href="tel:+110001111111" class="menu-link-tel">+11 (000) 111-11-11</a></li>
+                    </ul>
+                    <ul class="mobile-menu-link-list list">
+                        <li class="mobile-menu-item">
+                            <a href="" class="mobile-menu-links">
+                                <svg class="mobile-menu-icon" width="24" height="24">
+                                    <use href="./image/icons/symbol-defs-one.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a href="" class="mobile-menu-links">
+                                <svg class="mobile-menu-icon" width="24" height="24">
+                                    <use href="./image/icons/symbol-defs-one.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a href="" class="mobile-menu-links">
+                                <svg class="mobile-menu-icon" width="24" height="24">
+                                    <use href="./image/icons/symbol-defs-one.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a href="" class="mobile-menu-links">
+                                <svg class="mobile-menu-icon" width="24" height="24">
+                                    <use href="./image/icons/symbol-defs-one.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header> 
 
     <main>  
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title">Effective Solutions for Your Business</h1>
+                <h1 class="hero-title">Effective Solutions For Your Business</h1>
                 <button class="button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
     
-        <section class="section">
+        <section class="section-about">
             <div class="container">
-                <ul class="list">
-                    <li class="section-item-text icon-starlink">
+                <ul class="list about-list">
+                    <li class="about-item icon-starlink">
                         <h3 class="section-name">Strategy</h3>
                         <p class="text">Our goal is to identify the business
                             problem to walk away with the perfect and creative solution. </p>
                     </li>
     
-                    <li class="section-item-text icon-clock">
+                    <li class="about-item icon-clock">
                         <h3 class="section-name">Punctuality</h3>
                         <p class="text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
                     </li>
     
-                    <li class="section-item-text icon-screen">
+                    <li class="about-item icon-screen">
                         <h3 class="section-name">Diligence</h3>
                         <p class="text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
                     </li>
     
-                    <li class="section-item-text icon-robot">
+                    <li class="about-item icon-robot">
                         <h3 class="section-name">Technologies</h3>
                         <p class="text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                     </li>
@@ -67,10 +127,10 @@
         </section>
     
             
-        <section class="section-no-padding">
+        <section class="section-doing">
             <div class="container">
                 <h2 class="section-title">What are we doing</h2>
-                <ul class="list">
+                <ul class="list doing-list">
                     <li class="section-item"><img src="./image/dashboard.jpg" alt="Dashboard" width="360" height="300"></li>
                     <li class="section-item"><img src="./image/chat.jpg" alt="chat" width="360" height="300"></li>
                     <li class="section-item"><img src="./image/screen.jpg" alt="Screen" width="360" height="300"></li>
@@ -79,14 +139,14 @@
         </section>
 
         <section class="section-team">
-            <div class="container">
-                <h2 class="section-title">Our Team</h2>
-                <ul class="list">
+            <div class="container team-container">
+                <h2 class="section-team-title">Our Team</h2>
+                <ul class="list team-list">
                     <li class="section-team-list">
-                        <img src="./image/mark.jpg" alt="Marc" width="264" height="260">
+                        <img srcset="./image/mark.jpg 1x, ./image/mark-2x.jpg 2x" src="./image/mark.jpg" alt="Marc" width="264" height="260">
                         <div class="section-team-text">
-                            <h3 class="section-name">Mark Guerrero</h3>
-                            <p class="text">Product Designer</p>
+                            <h3 class="team-name">Mark Guerrero</h3>
+                            <p class="text team-text">Product Designer</p>
                             <ul class="team-links-list list">
                                 <li class="team-links-item">
                                     <a href="" class="team-links">
@@ -121,10 +181,10 @@
                     </li>
     
                     <li class="section-team-list">
-                        <img src="./image/tom.jpg" alt="Tom" width="264" height="260">                 
+                        <img srcset="./image/tom.jpg 1x, ./image/tom-2x.jpg 2x" src="./image/tom.jpg" alt="Tom" width="264" height="260">                 
                         <div class="section-team-text">
-                            <h3 class="section-name">Tom Ford</h3>
-                            <p class="text">Frontend Developer</p>
+                            <h3 class="team-name">Tom Ford</h3>
+                            <p class="text team-text">Frontend Developer</p>
                             <ul class="team-links-list list">
                                 <li class="team-links-item">
                                     <a href="" class="team-links">
@@ -159,10 +219,10 @@
                     </li>
     
                     <li class="section-team-list">
-                        <img src="./image/camila.jpg" alt="Camila" width="264" height="260">                 
+                        <img srcset="./image/camila.jpg 1x, ./image/camila-2x.jpg 2x" src="./image/camila.jpg" alt="Camila" width="264" height="260">                 
                         <div class="section-team-text">
-                            <h3 class="section-name">Camila Garcia</h3>
-                            <p class="text">Marketing</p>
+                            <h3 class="team-name">Camila Garcia</h3>
+                            <p class="text team-text">Marketing</p>
                             <ul class="team-links-list list">
                                 <li class="team-links-item">
                                     <a href="" class="team-links">
@@ -197,10 +257,10 @@
                     </li>
     
                     <li class="section-team-list">
-                        <img src="./image/daniel.jpg" alt="Daniel" width="264" height="260">
+                        <img srcset="./image/daniel.jpg 1x, ./image/daniel-2x.jpg 2x" src="./image/daniel.jpg" alt="Daniel" width="264" height="260">
                         <div class="section-team-text">
-                            <h3 class="section-name">Daniel Wilson</h3>
-                            <p class="text">UI Designer</p>
+                            <h3 class="team-name">Daniel Wilson</h3>
+                            <p class="text team-text">UI Designer</p>
                             <ul class="team-links-list list">
                                 <li class="team-links-item">
                                     <a href="" class="team-links">
@@ -409,5 +469,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

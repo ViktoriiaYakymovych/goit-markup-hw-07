@@ -1,0 +1,136 @@
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1158px;
+    }
+
+    .site-nav {
+        margin-right: 332px;
+    }
+
+    .auth-nav {
+        gap: 40px;
+    }
+
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../image/people-office.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../image/people-office-2x.jpg);
+        }
+    }
+
+    .button {
+        margin-top: 48px;
+    }
+
+
+
+    .section-about {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .section-name {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .text {
+        font-weight: 400;
+    }
+
+    .about-list {
+        gap: 24px;
+    }
+
+    .about-item {
+        width: calc((100% - 24px * 3) / 4);
+    }
+
+    .about-item::before {
+        content: '';
+        display: block;
+        height: 112px;
+        margin-bottom: 8px;
+        background: var(--white-milk-color);
+        border-radius: 4px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .icon-starlink::before {
+        background-image: url(../image/icons/antenna.svg);
+    }
+    
+    .icon-clock::before {
+        background-image: url(../image/icons/clock.svg);
+    }
+    
+    .icon-screen::before {
+        background-image: url(../image/icons/diagram.svg);
+    }
+    
+    .icon-robot::before {
+        background-image: url(../image/icons/astronaut.svg);
+    }
+
+
+    .section-doing {
+        display: block;
+        padding-top: 0;
+        padding-bottom: 120px;
+    }
+
+    .doing-list {
+        display: flex;
+        gap: 24px;
+    }
+
+
+    .section-team {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .team-list {
+        gap: 24px;
+    }
+
+    .section-team-list {
+        width: calc((100% - 24px * 3) / 4);
+    }
+
+
+    .section-customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .item-customers {
+        width: calc((100% - 24px * 5) / 6);
+    }
+
+
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .first-footer {
+        margin-right: 120px;
+    }
+
+    .second-footer {
+    margin-right: 80px;
+}
+
+}
