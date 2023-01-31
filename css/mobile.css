@@ -24,13 +24,29 @@
     gap: 72px;
     }
 
+    .button-list {
+        flex-wrap: wrap;
+        row-gap: 16px;
+        column-gap: 23px;
+        max-width: 263px;
+        margin-bottom: 48px;
+    }
+
+    .button-portfolio {
+        padding: 8px 16px;
+    }
+
+    .section-portfolio-list {
+        margin-bottom: 48px;
+    }
+
     .first-footer {
         margin: 0 auto;
         margin-bottom: 72px;
         max-width: 268px;
     }
 
-    .footer-links-list {
+    .second-footer {
         margin-bottom: 72px;
     }
 

@@ -140,6 +140,31 @@
         width: calc((100% - 24px * 2) / 3);
     }
 
+    .section-portfolio {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+
+    .button-list {
+        margin-bottom: 64px;
+        gap: 24px;
+    }
+
+    .button-portfolio {
+        padding: 12px 24px;
+    }
+
+    .portfolio-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .section-portfolio-list {
+        width: 356px;
+    }
+
     .footer-wrap {
         display: flex;
         flex-wrap: wrap;
