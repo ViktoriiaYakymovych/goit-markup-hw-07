@@ -190,6 +190,15 @@
         width: 264px;
         margin-right: 24px;
     }
+
+    .modal {
+        width: 408px;
+        padding: 24px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -223,4 +232,5 @@
         column-gap: 24px;
         row-gap: 72px;
     }
+
 }
