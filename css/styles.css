@@ -133,10 +133,7 @@ img {
 }
 
 .menu-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+    display: block;
     cursor: pointer;
     margin-left: auto;
     width: 24px;
