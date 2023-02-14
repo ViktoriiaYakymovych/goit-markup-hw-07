@@ -228,5 +228,21 @@
         column-gap: 24px;
         row-gap: 72px;
     }
+}
 
+@media screen and (max-width: 1199px) {
+    @media screen and (orientation: landscape) {
+        .modal {
+            margin: 0 auto;
+        }
+    }
+
+    @media screen and (orientation: portrait) {
+        .modal {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
 }
