@@ -542,6 +542,11 @@ img {
     color: var(--white-color);
 }
 
+.hide {
+    display: none;
+}
+
+
 .portfolio-list {
     list-style: none;
     padding: 0;
@@ -550,7 +555,7 @@ img {
 .section-portfolio-list {
     background-color: var(--white-color);
     max-width: 396px;
-    /*height: 420px; */
+    transition: 0.5s all;
 }
 
 .section-portfolio-link {
